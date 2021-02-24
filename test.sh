@@ -1,6 +1,6 @@
 touch scam.txt
 a=0
-while [ $a -lt 10 ] 
+while [ $a -lt 10000 ] 
 do 
     echo "Scam $a" > scam.txt
     git add -A
