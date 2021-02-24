@@ -1,9 +1,12 @@
-#!/bin/sh
-
 touch scam.txt
-for i in {1...5}
-do
-  echo "Scam $i" > scam.txt
-  git add -A
-  git commit -m "Scam Number $i"
-done
+a=0
+while [ $a -lt 10 ] 
+do 
+    echo "Scam $a" > scam.txt
+    git add -A
+    git commit -m "Scam Number $a"
+    a=`expr $a + 1` 
+done 
+
+
+
